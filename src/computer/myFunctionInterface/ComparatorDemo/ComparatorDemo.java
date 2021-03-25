@@ -23,7 +23,7 @@ public class ComparatorDemo {
 
         System.out.println("排序前：" + array);
 
-//        Collections.sort(array);
+//        Collections.Sort(array);
         Collections.sort(array, getComparator());
 
         System.out.println("排序后：" + array);

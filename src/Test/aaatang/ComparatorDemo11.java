@@ -20,7 +20,7 @@ import java.util.Comparator;
 //
 //        System.out.println("排序前：" + array);
 //
-//        Collections.sort(array, getComparator());
+//        Collections.Sort(array, getComparator());
 //
 //        System.out.println("排序后：" + array);
 //

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Created by Administrator on 2020/2/11 0011.
- * 使用二分法，ReverseArr方法，创建方法，使arrays.sort()方法实现，从大到小排序
+ * 使用二分法，ReverseArr方法，创建方法，使arrays.Sort()方法实现，从大到小排序
  */
 public class erfenfapaixu {
     public static void main(String[] args) {

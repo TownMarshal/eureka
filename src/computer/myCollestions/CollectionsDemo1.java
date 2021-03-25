@@ -27,7 +27,7 @@ public class CollectionsDemo1 {
         list.add(40);
 
         //public static <T extends Comparable<? super T>> void sort​(List<T> list)：将指定的列表按升序排序
-//        Collections.sort(list);
+//        Collections.Sort(list);
 
         //public static void reverse​(List<?> list)：反转指定列表中元素的顺序
 //        Collections.reverse(list);
