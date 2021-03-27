@@ -27,7 +27,6 @@ public class Sys {
             System.out.println(i);
         }
         long end= System.currentTimeMillis();
-        long a = end- start;
-        System.out.println("耗时："+a+"毫秒");
+        System.out.println("耗时："+(end- start)+"毫秒");
     }
 }

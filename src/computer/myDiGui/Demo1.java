@@ -29,7 +29,7 @@ public class Demo1 {
         int result  = fn(n);
         System.out.println(result);
     }
-    public static int fn(int n){
+    private static int fn(int n){
         int result = 1;
         if(n > 1){
             result = n * fn(n -1);

@@ -9,8 +9,6 @@ package computer.myString.itheima_02;
 
         equals比较的是两个对象长得是否一样，判断两个对象的某些特征是否一样，实际上就是调用对象的equals方法进行比较
 
-
-
      public boolean equals​(Object anObject)：
         将此字符串与指定对象进行比较。由于我们比较的是字符串对象，所以参数直接传递一个字符串
  */
@@ -20,7 +18,6 @@ public class StringDemo02 {
         char[] chs = {'a', 'b', 'c'};
         String s1 = new String(chs);
         String s2 = new String(chs);
-
 
 
         //直接赋值的方式得到对象
