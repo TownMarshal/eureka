@@ -2,6 +2,7 @@ package test1;
 
 /**
  * Created by Administrator on 2021/3/27 0027.
+ * switch后面可以跟什么类型：byte,short, char,int,枚举类，string类型
  */
 public class SwitchCastTest {
     public static void main(String[] args) {
