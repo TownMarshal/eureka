@@ -16,7 +16,7 @@ public class ObjectDemo {
         s2.setAge(30);
 
         //需求：比较两个对象的内容是否相同
-//        System.out.println(s1 == s2);
+        System.out.println(s1 == s2);
 
         System.out.println(s1.equals(s2));
 
