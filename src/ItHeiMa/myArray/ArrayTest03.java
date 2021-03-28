@@ -1,4 +1,4 @@
-package ItHeiMa.myArray.itheima_02;
+package ItHeiMa.myArray;
 
 /*
     多个数组指向相同

@@ -1,4 +1,4 @@
-package ItHeiMa.myArray.itheima_03;
+package ItHeiMa.myArray;
 
 /*
     静态初始化：
@@ -10,7 +10,7 @@ package ItHeiMa.myArray.itheima_03;
         简化格式：数据类型[] 变量名 = {数据1, 数据2, 数据3, ……};
         范例：       int[]    arr = {1, 2, 3};
  */
-public class ArrayDemo {
+public class ArrayDemo1 {
     public static void main(String[] args) {
         //定义数组
         int[] arr = {1, 2, 3};

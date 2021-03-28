@@ -1,7 +1,6 @@
-package ItHeiMa.myArray.itheima_01;
+package ItHeiMa.myArray;
 /*
     数组：是一种用于存储多个相同类型数据的存储模型
-
     定义格式：(推荐方式)
         数据类型[] 数组名;
         举例：int[] arr;

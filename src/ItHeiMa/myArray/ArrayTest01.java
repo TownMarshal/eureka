@@ -1,4 +1,4 @@
-package ItHeiMa.myArray.itheima_02;
+package ItHeiMa.myArray;
 
 /*
     单个数组

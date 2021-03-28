@@ -1,10 +1,10 @@
-package ItHeiMa.myArray.itheima_05;
+package ItHeiMa.myArray;
 /*
     获取最值
         获取数组中的最大值
         最小值同学们自己完成
  */
-public class ArrayTest02 {
+public class ArrayTest05 {
     public static void main(String[] args) {
         //定义数组
         int[] arr = {12, 45, 98, 73, 60};

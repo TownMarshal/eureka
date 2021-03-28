@@ -8,8 +8,8 @@ package ItHeiMa.myInteger;
 public class IntegerDemo {
     public static void main(String[] args) {
         //装箱：把基本数据类型转换为对应的包装数据类型
-        Integer i = Integer.valueOf(100);
-        Integer ii = 100;//Integer i = Integer.valueOf(100);
+        Integer i = Integer.valueOf(1);
+        Integer ii = 1;//Integer i = Integer.valueOf(100);
 
         //拆箱：把包装类类型转换为对应的基本数据类型
         //ii+=200;
