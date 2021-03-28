@@ -1,2 +1,0 @@
-className=computer.myReflect.ReflectDemo4.Teacher
-methodName=teach

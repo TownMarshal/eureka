@@ -9,27 +9,15 @@ public class Animal {
     public void run() {
         System.out.println("跑");
     }
-
-    public void eat() {
-        System.out.println("吃");
-    }
-    public void sleep() {
-        System.out.println("睡觉");
-    }
-
-
 }
-
 class mammal extends Animal {
     public void taisheng() {
         System.out.println("我是胎生");
     }
 
 }
-
 class bird extends Animal {
     String eye;
-
     //方法的重写
     @Override
     public void run() {
