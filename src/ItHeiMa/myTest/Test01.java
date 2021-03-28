@@ -1,5 +1,4 @@
 package ItHeiMa.myTest;
-
 import java.util.Scanner;
 
 /*

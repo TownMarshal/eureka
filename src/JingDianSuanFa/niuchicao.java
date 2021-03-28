@@ -1,4 +1,4 @@
-package ItHeiMa.AAAshenghuowenti;
+package JingDianSuanFa;
 
 /**
  * 问题描述:牛吃草问题：有一块牧场，可供10头牛吃20天，15头牛吃10天，则它可供多少头牛吃4天？
