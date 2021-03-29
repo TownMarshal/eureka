@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="demo-first:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/demo_first_jar</output-path>
-    <root id="archive" name="demo-first.jar">
-      <element id="module-output" name="demo-first" />
-    </root>
-  </artifact>
-</component>
