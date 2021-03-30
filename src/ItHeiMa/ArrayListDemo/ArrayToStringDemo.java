@@ -13,7 +13,7 @@ public class ArrayToStringDemo {
         System.out.println("s"+s);
     }
 
-    public static String arrayToString(int [] arr){
+    private static String arrayToString(int [] arr){
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int i = 0; i < arr.length; i++) {

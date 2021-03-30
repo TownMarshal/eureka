@@ -10,7 +10,7 @@ public class BreakContinue {
 //                break;//结束当前循环1,2,3
                 continue;//结束当前循环123567910
             }
-            System.out.print(i);
+            System.out.print(i+"\t");
         }
     }
 

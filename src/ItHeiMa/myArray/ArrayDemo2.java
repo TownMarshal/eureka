@@ -33,6 +33,8 @@ public class ArrayDemo2 {
 
         //定义数组
         int[] arr1 = {1, 2, 3};
+        System.out.println(arr1.length);
+        System.out.println("================");
 
         //输出数组名
         System.out.println(arr1);

@@ -18,11 +18,11 @@ import java.util.Date;
 public class SimpleDateFormatDemo {
     public static void main(String[] args) throws ParseException {
         Date d = new Date();
-        /*//默认方法
-        SimpleDateFormat sdf = new SimpleDateFormat();
-        String s = sdf.format(d);
-        System.out.println(s);
-*/
+//        //默认方法
+//        SimpleDateFormat sdf = new SimpleDateFormat();
+//        String s = sdf.format(d);
+//        System.out.println(s);
+
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日HH时mm分ss秒");
         String s = sdf.format(d);
         System.out.println(s);
