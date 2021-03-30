@@ -1,6 +1,5 @@
 package ShangXueTang;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 public class MyInteger {
     private int a = 123;

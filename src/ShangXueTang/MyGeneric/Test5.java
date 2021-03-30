@@ -1,6 +1,5 @@
 package ShangXueTang.MyGeneric;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 public class Test5 {
     public static void main(String[] args) {

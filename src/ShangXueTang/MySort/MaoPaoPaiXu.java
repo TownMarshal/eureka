@@ -1,6 +1,7 @@
-package ShangXueTang;
+package ShangXueTang.MySort;
 import java.util.Arrays;
-public class MySort {
+
+public class MaoPaoPaiXu {
     public static void sort(int[] values) {
         int temp;
         for (int i = 0; i < values.length; i++) {
