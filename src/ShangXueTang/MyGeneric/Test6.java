@@ -16,3 +16,13 @@ public class Test6 {
         showMsg.showFlag(generic2);
     }
 }
+
+//public class ShowMsg {
+//    //     public void showFlag(Generic<?> generic){
+//    //通配符的上限限定，使用extends关键字实现
+//    public void showFlag(Generic<? extends Number> generic){
+//        System.out.println(generic.getT());
+//
+//    }
+//}
+
