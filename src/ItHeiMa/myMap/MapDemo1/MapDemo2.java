@@ -1,5 +1,6 @@
 package ItHeiMa.myMap.MapDemo1;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,8 +43,10 @@ public class MapDemo2 {
         //int size()：集合的长度，也就是集合中键值对的个数
         System.out.println(map.size());
 
-
         //输出集合对象
         System.out.println(map);
+
+
+
     }
 }

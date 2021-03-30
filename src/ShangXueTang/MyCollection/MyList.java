@@ -11,6 +11,8 @@ import java.util.*;
  * jdk1.8之后：
  * 1.ArrayList初始集合不初始化数组容量的时候，默认值为0
  * 2.添加元素后，扩容为10，之后每次扩容为原来的0.5倍
+ * List:有序，可重复
+ * Set:无序，不可重复
  */
 
 public class MyList {
