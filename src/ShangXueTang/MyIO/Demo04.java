@@ -14,12 +14,8 @@ import java.io.FilenameFilter;
  *
  */
 public class Demo04 {
-
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        String path ="E:/xp/test/";
+        String path ="D:\\Chrome\\cccccc";
         File src =new File(path); //文件夹
         if(src.isDirectory()){ //存在并且为目录
             System.out.println("======子目录|文件名===");
@@ -55,7 +51,7 @@ public class Demo04 {
         }
     }
     public static void test1(){
-        String path ="E:/xp/test/parent/p/test";
+        String path ="D:\\Chrome\\cccccc";
         File src =new File(path);
         //src.mkdir();
         src.mkdirs();

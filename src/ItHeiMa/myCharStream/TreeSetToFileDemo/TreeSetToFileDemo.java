@@ -64,7 +64,7 @@ public class TreeSetToFileDemo {
         }
 
         //创建字符缓冲输出流对象
-        BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\itcast\\ts.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\Chrome\\ts.txt"));
 
         //遍历集合，得到每一个学生对象
         for (Student s : ts) {

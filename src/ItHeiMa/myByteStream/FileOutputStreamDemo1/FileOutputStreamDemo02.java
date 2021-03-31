@@ -21,7 +21,7 @@ import java.io.IOException;
 public class FileOutputStreamDemo02 {
     public static void main(String[] args) throws IOException {
         //FileOutputStream​(String name)：创建文件输出流以指定的名称写入文件
-        FileOutputStream fos = new FileOutputStream("E:\\itcast\\fos.txt");
+        FileOutputStream fos = new FileOutputStream("D:\\git\\fos.txt");
         //new File(name)
 //        FileOutputStream fos = new FileOutputStream(new File("myByteStream\\fos.txt"));
 

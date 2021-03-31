@@ -17,14 +17,12 @@ public class CollectionsDemo1 {
     public static void main(String[] args) {
         //创建集合对象
         List<Integer> list = new ArrayList<Integer>();
-
         //添加元素
         list.add(30);
         list.add(20);
         list.add(50);
         list.add(10);
         list.add(40);
-
         //public static <T extends Comparable<? super T>> void sort​(List<T> list)：将指定的列表按升序排序
 //        Collections.Sort(list);
 

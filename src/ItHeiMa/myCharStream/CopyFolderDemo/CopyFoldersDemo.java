@@ -21,9 +21,9 @@ import java.io.*;
 public class CopyFoldersDemo {
     public static void main(String[] args) throws IOException {
         //创建数据源File对象，路径是E:\\itcast
-        File srcFile = new File("E:\\itcast");
+        File srcFile = new File("D:/Chrome");
         //创建目的地File对象，路径是D:\\
-        File destFile = new File("D:\\");
+        File destFile = new File("D:\\git");
 
         //写方法实现文件夹的复制，参数为数据源File对象和目的地File对象
         copyFolder(srcFile,destFile);

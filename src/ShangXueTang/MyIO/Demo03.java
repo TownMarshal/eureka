@@ -49,7 +49,7 @@ public class Demo03 {
     public static void test3() throws IOException, InterruptedException{
         //createNewFile() 不存在创建新文件
         //String path="E:/xp/test/con"; //con系统关键字
-        String path="D:/Chrome/a.txt";
+        String path="D:\\Chrome\\aa\\b.txt";
         //String path="E:/xp/test/1.jpg";
         File src =new File(path);
         if(!src.exists()){
@@ -64,7 +64,7 @@ public class Demo03 {
 
         //static createTempFile(前缀3个字节长，后缀默认.temp) 默认临时空间
         //static createTempFile(前缀3个字节长，后缀默认.temp,目录)
-        File temp= File.createTempFile("tes", ".temp",new File("e:/xp/test"));
+        File temp= File.createTempFile("tes", ".temp",new File("D:\\Chrome\\aa"));
         Thread.sleep(10000);
         temp.deleteOnExit(); //退出即删除
 
@@ -76,7 +76,7 @@ public class Demo03 {
     //3、长度 length()
     public static void test2(){
         //String path ="2.txt";
-        String path="D:/Chrome/a.txt";
+        String path="D:\\Chrome\\aa\\b.txt";
         //String path="E:/xp/test/200.jpg";
         File src =new File(path);
         //是否存在
@@ -100,9 +100,9 @@ public class Demo03 {
     }
     //1、名称
     public static void test1(){
-        //File src =new File("E:/xp/test/2.jpg");
+        File src =new File("D:\\Chrome\\aa\\b.txt");
         //建立联系
-        File src =new File("2.txt");
+//        File src =new File("b.txt");
         System.out.println(src.getName()); //返回名称
         System.out.println(src.getPath()); //如果是绝对路径，返回完整路径，否则相对路径
         System.out.println(src.getAbsolutePath());//返回绝对路径

@@ -8,16 +8,11 @@ import java.util.Arrays;
  * 1、listFiles()
  * 2、递归
  * static listRoots() 根路径
- * @author Administrator
- *
+
  */
 public class Demo05 {
-
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        String path ="E:/xp/test";
+        String path ="D:\\Chrome";
         File parent =new File(path);
         //printName(parent);
 
@@ -40,7 +35,6 @@ public class Demo05 {
             for(File sub:src.listFiles()){
                 printName(sub);
             }
-
         }
     }
 }
