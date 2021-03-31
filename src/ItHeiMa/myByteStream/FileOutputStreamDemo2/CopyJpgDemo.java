@@ -17,9 +17,9 @@ import java.io.IOException;
 public class CopyJpgDemo {
     public static void main(String[] args) throws IOException {
         //根据数据源创建字节输入流对象
-        FileInputStream fis = new FileInputStream("E:\\itcast\\mn.jpg");
+        FileInputStream fis = new FileInputStream("D:\\git\\a.png");
         //根据目的地创建字节输出流对象
-        FileOutputStream fos = new FileOutputStream("E:\\itcast\\林青霞\\mn.jpg");
+        FileOutputStream fos = new FileOutputStream("D:\\git\\JavaWEB\\a.png");
 
         //读写数据，复制图片(一次读取一个字节数组，一次写入一个字节数组)
         byte[] bys = new byte[1024];

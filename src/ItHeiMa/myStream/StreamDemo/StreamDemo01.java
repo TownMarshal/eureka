@@ -19,9 +19,9 @@ public class StreamDemo01 {
         list.add("张无忌");
 
         //需求1：把list集合中以张开头的元素在控制台输出
-//        list.stream().filter((String s) -> {
-//            return s.startsWith("张");
-//        }).forEach(System.out::println);
+        list.stream().filter((String s) -> {
+            return s.startsWith("张");
+        }).forEach(System.out::println);
 
 
 
