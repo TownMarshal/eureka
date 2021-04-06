@@ -17,14 +17,11 @@ public class YangHuiTest {
             yanghui[i][0]=1;
             yanghui[i][i]=1;
 
-
-
             if (i>1){
                 for (int j = 1; j < yanghui[i].length-1; j++) {
                         yanghui[i][j]=yanghui[i-1][j-1]+yanghui[i-1][j];
                 }
             }
-
 
         }
         //3.遍历二位数组
