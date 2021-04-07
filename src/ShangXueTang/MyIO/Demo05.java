@@ -12,7 +12,7 @@ import java.util.Arrays;
  */
 public class Demo05 {
     public static void main(String[] args) {
-        String path ="D:\\Chrome";
+        String path ="D:\\git";
         File parent =new File(path);
         //printName(parent);
 
