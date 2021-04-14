@@ -2,6 +2,7 @@ package ItHeiMa.myMap.MapDemo5;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -51,13 +52,21 @@ public class ArrayListIncludeHashMapDemo {
         //把HashMap作为元素添加到ArrayList集合
         array.add(hm3);
 
-        //遍历ArrayList集合
-        for (HashMap<String, String> hm : array) {
-            Set<String> keySet = hm.keySet();
+        for (HashMap<String, String> map : array) {
+            Set<String> keySet = map.keySet();
             for (String key : keySet) {
-                String value = hm.get(key);
-                System.out.println(key + "," + value);
+                String value = map.get(key);
+                System.out.println(key+"==============="+value);
             }
         }
+
+//        //遍历ArrayList集合
+//        for (HashMap<String, String> hm : array) {
+//            Set<String> keySet = hm.keySet();
+//            for (String key : keySet) {
+//                String value = hm.get(key);
+//                System.out.println(key + "," + value);
+//            }
+//        }
     }
 }

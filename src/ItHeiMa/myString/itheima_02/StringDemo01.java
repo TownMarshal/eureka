@@ -11,7 +11,7 @@ package ItHeiMa.myString.itheima_02;
 public class StringDemo01 {
     public static void main(String[] args) {
         //public String()：创建一个空白字符串对象，不含有任何内容
-        String s1 = new String();
+        String s1 = "";
         System.out.println("s1:" + s1);
 
         //public String(char[] chs)：根据字符数组的内容，来创建字符串对象

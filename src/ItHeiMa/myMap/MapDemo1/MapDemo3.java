@@ -3,6 +3,7 @@ package ItHeiMa.myMap.MapDemo1;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by Administrator on 2020/2/18 0018.
@@ -21,20 +22,19 @@ public class MapDemo3 {
         map.put("郭靖", "黄蓉");
         map.put("杨过", "小龙女");
 
-        //V get(Object key):根据键获取值
- //     System.out.println(map.get("张无忌"));
- //       System.out.println(map.get("张三丰"));
-
-        /*Set<K> keySet():获取所有键的集合
+        //V get(Object key):根据键获取相对应的值
+        System.out.println(map.get("张无忌"));
+        //获取所有键的集合
         Set<String> keySet = map.keySet();
-        for(String key : keySet) {
+        for (String key : keySet) {
             System.out.println(key);
-        }*/
+        }
 
-        //Collection<V> values():获取所有值的集合
+        //获取所有值得集合
         Collection<String> values = map.values();
-        for(String value : values) {
+        for (String value : values) {
             System.out.println(value);
         }
+
     }
 }

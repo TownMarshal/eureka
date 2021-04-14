@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2021/3/30 0030.
  */
-public class CollectionsDemo1 {
+public class monidoudizhu {
     public static void main(String[] args) {
         List<Integer>cards=new ArrayList<>();
         //shuffle模拟斗地主

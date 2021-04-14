@@ -14,20 +14,20 @@ package ItHeiMa.myMap.MapDemo1;
  *         多态的方式
  *         具体的实现类HashMap
  */
+import ItHeiMa.Sys;
+
 import java.util.HashMap;
 import java.util.Map;
 public class MapDemo1 {
-    public static void main(String[] args) {
-        //创建集合对象
-        Map<String,String> map = new HashMap<String,String>();
-        //V put​(K key, V value) 将指定的值与该映射中的指定键相关联
-        map.put("itheima001","林青霞");
-        map.put("itheima002","张曼玉");
-        map.put("itheima003","王祖贤");
-        map.put("itheima003","柳岩");
-        //输出集合对象
-        System.out.println(map);
-    }
+
+public static void main(String[] args) {
+    HashMap<String, String> map = new HashMap<>();
+    map.put("001","电信");
+    map.put("002","祖安");
+    map.put("003","网通");
+    System.out.println(map);
+
+}
 }
 
 

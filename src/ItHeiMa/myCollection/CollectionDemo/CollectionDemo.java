@@ -32,9 +32,7 @@ public class CollectionDemo {
         c.add(s3);
 
         //遍历集合(迭代器方式)
-        Iterator<Student> it = c.iterator();
-        while (it.hasNext()) {
-            Student s = it.next();
+        for (Student s : c) {
             System.out.println(s.getName() + "," + s.getAge());
         }
 

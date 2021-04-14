@@ -25,10 +25,6 @@ public class MethodTest {
     public static int getMax(int a, int b) {
         //使用分支语句分两种情况对两个数字的大小关系进行处理
         //根据题设分别设置两种情况下对应的返回结果
-        if(a > b) {
-            return a;
-        } else {
-            return b;
-        }
+        return Math.max(a, b);
     }
 }

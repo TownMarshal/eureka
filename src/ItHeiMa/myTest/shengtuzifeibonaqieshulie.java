@@ -11,7 +11,7 @@ package ItHeiMa.myTest;
         3:用循环实现计算每个月的兔子对数
         4:输出数组中最后一个元素的值，就是第20个月的兔子对数
  */
-public class Test04 {
+public class shengtuzifeibonaqieshulie {
     public static void main(String[] args) {
         //为了存储多个月的兔子对数，定义一个数组，用动态初始化完成数组元素的初始化，长度为20
         int[] arr = new int[20];

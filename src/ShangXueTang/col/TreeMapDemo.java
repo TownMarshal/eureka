@@ -34,6 +34,9 @@ public class TreeMapDemo {
         //查看键
         Set<Person> set = map.keySet();
         System.out.println(set);
+        for (Person person : set) {
+            System.out.println(person.getName()+ person.getHandsome());
+        }
 
 
     }

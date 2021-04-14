@@ -54,7 +54,7 @@ public class Test08 {
             返回值类型：int
             参数：int[] arr, int number
      */
-    public static int getIndex(int[] arr, int number) {
+    private static int getIndex(int[] arr, int number) {
         //定义一个索引变量，初始值为-1
         int index = -1;
 

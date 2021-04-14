@@ -24,8 +24,8 @@ public class IteratorDemo {
         c.add("world");
         c.add("java");
 
+
         //Iterator<E> iterator()：返回此集合中元素的迭代器，通过集合的iterator()方法得到
-        Iterator<String> it = c.iterator();
         /*
             public Iterator<E> iterator() {
                 return new Itr();
@@ -64,9 +64,8 @@ public class IteratorDemo {
         */
 
         //用while循环改进判断
-        while (it.hasNext()) {
+        for (String s : c) {
 //            System.out.println(it.next());
-            String s = it.next();
             System.out.println(s);
         }
     }

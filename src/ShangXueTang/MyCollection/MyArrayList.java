@@ -6,24 +6,19 @@ package ShangXueTang.MyCollection;
  */
 public class MyArrayList /*implements List*/  {
 // TODO: 2021/3/30 数组扩容
-
         private Object[] elementData;
         private int size;
-
-
         public int size(){
             return size;
         }
-
         public boolean isEmpty(){
             return size==0;
         }
-
         public MyArrayList(){
             this(10);
         }
 
-        public MyArrayList(int initialCapacity){
+        private MyArrayList(int initialCapacity){
             if(initialCapacity<0){
                 try {
                     throw new Exception();

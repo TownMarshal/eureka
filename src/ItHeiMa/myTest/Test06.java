@@ -21,10 +21,10 @@ public class Test06 {
         int sum = 0;
 
         //遍历数组，获取到数组中的每一个元素
-        for(int x=0; x<arr.length; x++) {
+        for (int i : arr) {
             //判断该元素是否满足条件，如果满足条件就累加
-            if(arr[x]%10!=7 && arr[x]/10%10!=7 && arr[x]%2==0) {
-                sum += arr[x];
+            if (i / 10 % 10 != 7 && i % 2 == 0) {
+                sum += i;
             }
         }
 

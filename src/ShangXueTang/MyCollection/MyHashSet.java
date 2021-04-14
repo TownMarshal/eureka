@@ -4,8 +4,7 @@ import java.util.HashMap;
 
 /**
  * 自定义自己的HashSet
- *
- * @author Administrator
+
  * set的不可重复就是利用了map里面键对象的不可重复！
  */
 public class MyHashSet {

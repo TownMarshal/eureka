@@ -25,12 +25,8 @@ public class MethodDemo {
     }
 
     //需求：定义一个方法，该方法接收一个参数，判断该数据是否是偶数，并返回真假值
-    public static boolean isEvenNumber(int number) {
-        if(number%2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+    private static boolean isEvenNumber(int number) {
+        return number % 2 == 0;
     }
 
 }

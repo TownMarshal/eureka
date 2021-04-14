@@ -25,6 +25,8 @@ public class MapDemo2 {
         map.put("郭靖","黄蓉");
         map.put("杨过","小龙女");
 
+        System.out.println(map.remove("杨过"));
+
         //V remove(Object key)：根据键删除键值对元素
 //        System.out.println(map.remove("郭靖"));
   //      System.out.println(map.remove("郭襄"));//null
@@ -43,8 +45,7 @@ public class MapDemo2 {
         //int size()：集合的长度，也就是集合中键值对的个数
         System.out.println(map.size());
 
-        //输出集合对象
-        System.out.println(map);
+
 
 
 

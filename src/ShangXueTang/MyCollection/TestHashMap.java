@@ -3,7 +3,7 @@ package ShangXueTang.MyCollection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
+//map集合的遍历四种方式
 public class TestHashMap {
     public static void main(String[] args) {
         Map<Integer,String> map =new HashMap<Integer,String>();

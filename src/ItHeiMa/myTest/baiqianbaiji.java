@@ -12,7 +12,7 @@ package ItHeiMa.myTest;
         4:判断表达式 z%3==0 和表达式 5*x + 3*y + z/3 = 100 是否同时成立，如果成立，输出对应的 x，y，z 的值，
           就是对应的鸡翁，鸡母，鸡雏的值
  */
-public class Test05 {
+public class baiqianbaiji {
     public static void main(String[] args) {
         //第1层循环，用于表示鸡翁的范围，初始化表达式的变量定义为 x=0，判断条件是x<=20
         for(int x=0; x<=20; x++) {

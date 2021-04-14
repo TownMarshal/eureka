@@ -16,8 +16,6 @@ public class MethodDemo {
     public static void methodTwo() {
         //return 100;
 
-        return;
-
         //System.out.println(100);
     }
 

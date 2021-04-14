@@ -9,9 +9,12 @@ public class ArgsDemo01 {
         System.out.println("调用change方法前：" + number);
         change(number);
         System.out.println("调用change方法后：" + number);
+
     }
 
-    public static void change(int number) {
-        number = 200;
+    private static void change(int x) {
+        x = 200;
+        System.out.println("方法区里");
+        System.out.println(x);
     }
 }
