@@ -12,15 +12,10 @@ public class demo01 {
         c.add("c");
         c.add("d");
 
-        Iterator it = c.iterator();					//返回在此collection的元素上进行迭代的迭代器
-        while(it.hasNext()) {							//集合中的迭代方法(遍历)
-            System.out.println(it.next());
+        //返回在此collection的元素上进行迭代的迭代器
+        for (Object o : c) {                            //集合中的迭代方法(遍历)
+            System.out.println(o);
         }
-
-
-
-
-
 
     }
 

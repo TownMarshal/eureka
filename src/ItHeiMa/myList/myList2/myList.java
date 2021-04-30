@@ -40,8 +40,7 @@ public class myList {
         System.out.println("--------");
 
         //for循环方式
-        for(int i=0; i<list.size(); i++) {
-            Student s = list.get(i);
+        for (Student s : list) {
             System.out.println(s.getName() + "," + s.getAge());
         }
     }

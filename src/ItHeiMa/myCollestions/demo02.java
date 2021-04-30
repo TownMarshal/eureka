@@ -14,9 +14,8 @@ public class demo02 {
 
         //迭代遍历Map集合的第一种方式
         Set set = map.keySet();
-        Iterator it = set.iterator();
-        while(it.hasNext()){
-            String key = (String) it.next();
+        for (Object o : set) {
+            String key = (String) o;
             String value = (String) map.get(key);
             System.out.println(key + "=" + value);
         }

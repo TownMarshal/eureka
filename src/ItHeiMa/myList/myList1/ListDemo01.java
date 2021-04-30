@@ -6,9 +6,9 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2020/2/17 0017.
- *   List集合特点
- *         有序：存储和取出的元素顺序一致
- *         可重复：存储的元素可以重复
+ * List集合特点
+ * 有序：存储和取出的元素顺序一致
+ * 可重复：存储的元素可以重复
  */
 public class ListDemo01 {
     public static void main(String[] args) {
@@ -23,12 +23,9 @@ public class ListDemo01 {
 
         //输出集合对象
 //        System.out.println(list);
-
-        //迭代器的方式遍历
-        Iterator<String> it = list.iterator();
-        while (it.hasNext()) {
-            String s = it.next();
+        for (String s : list) {
             System.out.println(s);
         }
+
     }
 }

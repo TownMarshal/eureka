@@ -26,7 +26,7 @@ public class ListDemo3 {
             System.out.println(s);
         }
         //剩下两种遍历方式大家补齐
-        System.out.println("--------");
+
 
         LinkedList<String> linkedList = new LinkedList<String>();
 

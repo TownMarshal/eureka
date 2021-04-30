@@ -16,12 +16,12 @@ public class IntegerDemo {
 
         ii = ii.intValue() + 200;
         System.out.println(ii);
-        ii+=200;
+        ii += 200;
         System.out.println(ii);
 
         Integer iii = null;
         System.out.println(iii);
-        if (iii != null){
+        if (iii != null) {
             iii += 300;
         }
 

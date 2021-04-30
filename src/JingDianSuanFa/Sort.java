@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Sort {
     public static void sort() {
         Scanner input = new Scanner(System.in);
-        int sort[] = new int[10];
+        int[] sort = new int[10];
         int temp;
         System.out.println("请输入10个排序的数据：");
         for (int i = 0; i < sort.length; i++) {
@@ -24,8 +24,8 @@ public class Sort {
             }
         }
         System.out.println("排列后的顺序为：");
-        for (int i = 0; i < sort.length; i++) {
-            System.out.print(sort[i] + "   ");
+        for (int value : sort) {
+            System.out.print(value + "   ");
         }
     }
 

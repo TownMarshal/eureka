@@ -5,17 +5,21 @@ package JingDianSuanFa;
  */
 public class ZhiShu {
     public static void main(String[] args) {
-        for (int i = 2; i < 100; i++) {
-            boolean isFlag = true;
-            for (int j = 2; j < i; j++) {
+        long start = System.currentTimeMillis();
+        for (int i = 2; i < 10000; i++) {
+            boolean flag = true;
+            for (int j = 2; j < Math.sqrt(i); j++) {
                 if (i % j == 0) {
-                    isFlag = false;
+                    flag = false;
+                    break;
                 }
             }
-            if (isFlag == true) {
+            if (flag) {
                 System.out.println(i);
             }
         }
+        long end = System.currentTimeMillis();
+        System.out.println("计算一万之内的质数，花费了" + (end - start) + "毫秒");
 
     }
 }
