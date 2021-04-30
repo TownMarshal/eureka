@@ -10,6 +10,6 @@ public class Demo05 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
-        System.out.println(num >=90 ? 'A' : (num < 60 ? 'C' : 'B'));
+        System.out.println(num >= 90 ? 'A' : (num < 60 ? 'C' : 'B'));
     }
 }

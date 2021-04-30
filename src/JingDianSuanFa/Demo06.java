@@ -22,7 +22,7 @@ public class Demo06 {
     }
 
     static class CommonDivisor{
-        public int commonDivisor(int x, int y){
+        int commonDivisor(int x, int y){
             if (x > y){
                 int t = x;
                 x = y;
