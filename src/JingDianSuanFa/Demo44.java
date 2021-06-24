@@ -11,16 +11,17 @@ public class Demo44 {
         System.out.println("请输入一个偶数：");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
-        if (num %2 != 0){
+        if (num % 2 != 0) {
             System.out.println("输入的数字不为偶数");
             System.exit(0);
         }
         twoAdd(num);
     }
+
     //素数之和
-    private static void twoAdd(int num){
-        for (int i=2; i<num; i++){
-            if (isPrime(i) && isPrime(num-i)){
+    private static void twoAdd(int num) {
+        for (int i = 2; i < num; i++) {
+            if (isPrime(i) && isPrime(num - i)) {
                 System.out.println(num + "=\t" + i + "+\t" + (num - i));
             }
         }
@@ -29,8 +30,8 @@ public class Demo44 {
     //判断是否为素数
     private static boolean isPrime(int num) {
         boolean flag = true;
-        for (int i=2; i<num; i++){
-            if (num % i == 0){
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
                 flag = false;
                 break;
             }

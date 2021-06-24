@@ -13,13 +13,13 @@ public class Demo22 {
         System.out.println(n + "的阶乘是" + fac(n));
     }
 
-    public static long fac(int n){
-        if (n == 1 || n == 0){
+    private static long fac(int n) {
+        if (n == 1 || n == 0) {
             return 1;
         }
         long sum = 0;
-        if (n > 1){
-            sum = n * fac(n-1);
+        if (n > 1) {
+            sum = n * fac(n - 1);
         }
         return sum;
     }

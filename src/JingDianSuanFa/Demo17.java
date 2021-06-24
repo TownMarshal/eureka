@@ -10,10 +10,11 @@ public class Demo17 {
     public static void main(String[] args) {
         System.out.println(total(1));
     }
-    public static int total(int day){
-        if(day == 10)
+
+    public static int total(int day) {
+        if (day == 10)
             return 1;
         else
-            return (total(day+1)+1)*2;
+            return (total(day + 1) + 1) * 2;
     }
 }

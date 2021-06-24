@@ -8,19 +8,10 @@ import java.io.IOException;
  */
 public class FileOutputStreamDemo04 {
     public static void main(String[] args) {
-//        try {
-//            FileOutputStream fos = new FileOutputStream("E:\itcast\fos.txt");
-//            fos.write("hello".getBytes());
-//            fos.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
 
-        //加入finally来实现释放资源
         FileOutputStream fos = null;
         try {
-            fos = new FileOutputStream("E:\\itcast\\fos.txt");
-//            fos = new FileOutputStream("Z:\\itcast\\fos.txt");
+            fos = new FileOutputStream("D:\\git\\fos.txt");
             fos.write("hello".getBytes());
         } catch (IOException e) {
             e.printStackTrace();

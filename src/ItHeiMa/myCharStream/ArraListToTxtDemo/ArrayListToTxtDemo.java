@@ -19,7 +19,7 @@ import java.util.ArrayList;
  */
 public class ArrayListToTxtDemo {
     public static void main(String[] args) throws IOException {
-        //创建ArrayList集合
+
         ArrayList<String> array = new ArrayList<String>();
 
         //往集合中存储字符串元素
@@ -28,8 +28,8 @@ public class ArrayListToTxtDemo {
         array.add("java");
 
         //创建字符缓冲输出流对象
-//        BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\itcast\\a.txt"));
-        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\Chrome\\a.txt"));
+
+        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\git\\a.txt"));
 
         //遍历集合，得到每一个字符串数据
         for(String s : array) {

@@ -1,4 +1,5 @@
 package ItHeiMa.myCollestions;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -6,12 +7,12 @@ import java.util.List;
 /**
  * Created by Administrator on 2020/2/19 0019.
  * Collections类的概述
- *         是针对集合操作的工具类
- *
- *     Collections类的常用方法
- *         public static <T extends Comparable<? super T>> void sort​(List<T> list)：将指定的列表按升序排序
- *         public static void reverse​(List<?> list)：反转指定列表中元素的顺序
- *         public static void shuffle​(List<?> list)：使用默认的随机源随机排列指定的列表
+ * 是针对集合操作的工具类
+ * <p>
+ * Collections类的常用方法
+ * public static <T extends Comparable<? super T>> void sort​(List<T> list)：将指定的列表按升序排序
+ * public static void reverse​(List<?> list)：反转指定列表中元素的顺序
+ * public static void shuffle​(List<?> list)：使用默认的随机源随机排列指定的列表
  */
 public class CollectionsDemo1 {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class CollectionsDemo1 {
         list.add(50);
         list.add(10);
         list.add(40);
-        //public static <T extends Comparable<? super T>> void sort​(List<T> list)：将指定的列表按升序排序
+
 //        Collections.Sort(list);
 
         //public static void reverse​(List<?> list)：反转指定列表中元素的顺序

@@ -14,11 +14,12 @@ public class Demo08 {
         System.out.println("请输入n的值");
         int n = in.nextInt();
         int sum = 0, num = 0;
-        for(int i=1; i<=n; i++){
+        for (int i = 1; i <= n; i++) {
             num += a;
-            a = a*10;
+            a = a * 10;
             sum += num;
         }
-        System.out.println("结果为:"+ sum);
+        System.out.println("结果为:" + sum);
     }
+
 }

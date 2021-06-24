@@ -34,6 +34,5 @@ public class SimpleDateFormatDemo {
         Date dd = sdf.parse(ss);
         System.out.println(dd);
 
-
     }
 }

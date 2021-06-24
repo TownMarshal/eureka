@@ -6,10 +6,10 @@ package JingDianSuanFa;
 public class Demo10 {
 
     public static void main(String[] args) {
-        int sum=0, high = 100;
-        for (int i=1; i<=10; i++){
+        int sum = 0, high = 100;
+        for (int i = 1; i <= 10; i++) {
             sum += high;
-            high = high /2 ;
+            high = high / 2;
             sum += high;
         }
         System.out.println("总共经过" + sum + "米");

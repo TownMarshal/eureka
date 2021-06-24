@@ -10,13 +10,13 @@ public class Demo24 {
         Scanner in = new Scanner(System.in);
         System.out.println("请输入不多于5位的正整数：");
         String str = in.nextLine();
-        if (str.trim().length() > 5 || Integer.parseInt(str) < 0){
+        if (str.trim().length() > 5 || Integer.parseInt(str) < 0) {
             System.out.println("请输入5位正整数");
             System.exit(0);
         }
-        System.out.println(str + "是" + str.trim().length() +"位数");
+        System.out.println(str + "是" + str.trim().length() + "位数");
         char[] chars = str.toCharArray();
-        for (int i=chars.length-1; i>=0; i--){
+        for (int i = chars.length - 1; i >= 0; i--) {
             System.out.print(chars[i]);
         }
     }

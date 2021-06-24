@@ -26,7 +26,7 @@ public class BufferStreamDemo {
         */
 
         //字节缓冲输入流：BufferedInputStream​(InputStream in)
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("E:\\itcast\\bos.txt"));
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("D:\\git\\fos.txt"));
 
         //一次读取一个字节数据
 //        int by;
@@ -40,7 +40,6 @@ public class BufferStreamDemo {
         while ((len=bis.read(bys))!=-1) {
             System.out.print(new String(bys,0,len));
         }
-
         //释放资源
         bis.close();
     }

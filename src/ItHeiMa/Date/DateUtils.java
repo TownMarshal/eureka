@@ -11,7 +11,8 @@ import java.util.Date;
  * 成员方法静态
  */
 public class DateUtils {
-    private DateUtils(){}
+    private DateUtils() {
+    }
 
     /*
         把日期转为指定格式的字符串
@@ -19,7 +20,7 @@ public class DateUtils {
         参数：Date date, String format
      */
 
-    public static String dateToString(Date date,String format){
+    public static String dateToString(Date date, String format) {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         String s = sdf.format(date);
         return s;

@@ -33,5 +33,6 @@ public class Math {
         System.out.println(java.lang.Math.random());
         System.out.println((int)(java.lang.Math.random()*100)+1);
         System.out.println(java.lang.Math.round(java.lang.Math.random()));
+
     }
 }

@@ -1,5 +1,7 @@
 package ItHeiMa.myMethod.itheima_01;
 
+import java.util.Scanner;
+
 /*
     方法：是将具有独立功能的代码块组织成为一个整体，使其具有特殊功能的代码集
 
@@ -13,21 +15,19 @@ package ItHeiMa.myMethod.itheima_01;
  */
 public class MethodDemo {
     public static void main(String[] args) {
-        //调用方法
-        isEvenNumber();
+        System.out.println("你输入你要检验的数：");
+
+        Scanner scanner=new Scanner(System.in);
+        int i = scanner.nextInt();
+        iseven(i);
     }
-
-    //需求：定义一个方法，在方法中定义一个变量，判断该数据是否是偶数
-    private static void isEvenNumber() {
-        //定义变量
-        int number = 10;
-        number = 9;
-
-        //判断该数据是否是偶数
-        if (number % 2 == 0) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
+    private static String  iseven(int n){
+        if (n%2==0){
+            String s = "n是偶数";
+            return s;
         }
+        String s1 = "n是奇数";
+        return s1;
+
     }
 }

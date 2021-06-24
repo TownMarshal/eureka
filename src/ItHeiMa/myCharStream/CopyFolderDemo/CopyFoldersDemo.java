@@ -26,17 +26,17 @@ public class CopyFoldersDemo {
         File destFile = new File("D:\\git");
 
         //写方法实现文件夹的复制，参数为数据源File对象和目的地File对象
-        copyFolder(srcFile,destFile);
+        copyFolder(srcFile, destFile);
     }
 
     //复制文件夹
     private static void copyFolder(File srcFile, File destFile) throws IOException {
         //判断数据源File是否是目录
-        if(srcFile.isDirectory()) {
+        if (srcFile.isDirectory()) {
             //在目的地下创建和数据源File名称一样的目录
             String srcFileName = srcFile.getName();
-            File newFolder = new File(destFile,srcFileName); //D:\\itcast
-            if(!newFolder.exists()) {
+            File newFolder = new File(destFile, srcFileName); //D:\\itcast
+            if (!newFolder.exists()) {
                 newFolder.mkdir();
             }
 
@@ -44,14 +44,14 @@ public class CopyFoldersDemo {
             File[] fileArray = srcFile.listFiles();
 
             //遍历该File数组，得到每一个File对象
-            for(File file : fileArray) {
+            for (File file : fileArray) {
                 //把该File作为数据源File对象，递归调用复制文件夹的方法
-                copyFolder(file,newFolder);
+                copyFolder(file, newFolder);
             }
         } else {
             //说明是文件，直接复制，用字节流
-            File newFile = new File(destFile,srcFile.getName());
-            copyFile(srcFile,newFile);
+            File newFile = new File(destFile, srcFile.getName());
+            copyFile(srcFile, newFile);
         }
     }
 

@@ -12,10 +12,10 @@ public class Demo41 {
         System.out.println(func(5));
     }
 
-    public static int func(int num){
-        if(num==0){
+    public static int func(int num) {
+        if (num == 0) {
             return 1;
         }
-        return 5*func(num-1)+1;
+        return 5 * func(num - 1) + 1;
     }
 }

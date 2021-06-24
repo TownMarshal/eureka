@@ -9,17 +9,6 @@ import java.util.Scanner;
  *          * 2. 把每一个数的阶乘求和
  *          * 递归：就是方法自身调用自身, 必须要有终止条件
  *          * 求出一个数的阶乘
- *          * 5！ = 5*4！
- *          * 4！ = 4*3！
- *          * 3！ = 3*2！
- *          * 2！ = 2*1！
- *          * 1！ = 1
- *          * fn(n) = n * fn(n-1)
- *          * fn(5) = 5 * 4 * 3 * 2 * 1
- *          * fn(4) = 4 * fn(3)
- *          * fn(3) = 3 * fn(2)
- *          * fn(2) = 2 * fn(1)
- *          * fn(1) = 1
  */
 public class Demo1 {
     public static void main(String[] args) {
@@ -28,6 +17,11 @@ public class Demo1 {
         int n = sc.nextInt();
         int result  = fn(n);
         System.out.println(result);
+        int sum=0;
+        for (int i = 1; i <= n; i++) {
+            sum+=fn(i);
+        }
+        System.out.println(sum);
     }
     private static int fn(int n){
         int result = 1;

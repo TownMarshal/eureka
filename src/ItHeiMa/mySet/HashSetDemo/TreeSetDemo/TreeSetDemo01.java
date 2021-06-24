@@ -25,9 +25,8 @@ public class TreeSetDemo01 {
 
         ts.add(30);
 
-        //遍历集合
-        for(Integer i : ts) {
-            System.out.println(i);
+        for (Integer t : ts) {
+            System.out.println(t);
         }
     }
 }

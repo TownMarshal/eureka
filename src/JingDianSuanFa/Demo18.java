@@ -9,28 +9,28 @@ public class Demo18 {
     public static void main(String[] args) {
         char[] team1 = {'a', 'b', 'c'};
         char[] team2 = {'x', 'y', 'z'};
-        for (int i=0; i<team1.length; i++){
-            for (int j=0; j<team2.length; j++){
-                if (team1[i] == 'a' && team2[j] == 'x'){
+        for (int i = 0; i < team1.length; i++) {
+            for (int j = 0; j < team2.length; j++) {
+                if (team1[i] == 'a' && team2[j] == 'x') {
                     continue;
-                } else if (team1[i] == 'a' && team2[j] == 'y'){
+                } else if (team1[i] == 'a' && team2[j] == 'y') {
                     continue;
-                } else if (team1[i] == 'c' && (team2[j] == 'x' || team2[j] == 'z')){
+                } else if (team1[i] == 'c' && (team2[j] == 'x' || team2[j] == 'z')) {
                     continue;
-                } else if (team1[i] == 'b' && (team2[j] == 'z' || team2[j] == 'y')){
+                } else if (team1[i] == 'b' && (team2[j] == 'z' || team2[j] == 'y')) {
                     continue;
                 } else
                     System.out.println(team1[i] + "VS" + team2[j]);
             }
         }
 
-        char a,b,c;
-        for(a = 'x'; a <= 'z'; a++) {
-            for(b = 'x'; b <= 'z'; b++) {
-                if(a != b) {   //避免参赛队员重复比赛
-                    for(c = 'x'; c <= 'z'; c++) {
-                        if(a != c && b != c) {	  //避免参赛队员重复比赛
-                            if(a != 'x' && c != 'x' && c != 'z') {   //根据题意判断
+        char a, b, c;
+        for (a = 'x'; a <= 'z'; a++) {
+            for (b = 'x'; b <= 'z'; b++) {
+                if (a != b) {   //避免参赛队员重复比赛
+                    for (c = 'x'; c <= 'z'; c++) {
+                        if (a != c && b != c) {      //避免参赛队员重复比赛
+                            if (a != 'x' && c != 'x' && c != 'z') {   //根据题意判断
                                 System.out.println("a和" + a + "，b和" + b + "，c和" + c + "进行比赛");
                             }
                         }

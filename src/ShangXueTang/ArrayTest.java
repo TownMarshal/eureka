@@ -12,7 +12,7 @@ public class ArrayTest {
         arr[0]=12;
         arr[1]=33;
         arr[2]=42;
-        System.out.println(arr);
+        System.out.println(arr.toString());
 
     }
 }

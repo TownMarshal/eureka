@@ -21,7 +21,7 @@ public class FileOutputStreamDemo03 {
     public static void main(String[] args) throws IOException {
         //创建字节输出流对象
 //        FileOutputStream fos = new FileOutputStream("myByteStream\\fos.txt");
-        FileOutputStream fos = new FileOutputStream("E:\\itcast\\fos.txt",true);
+        FileOutputStream fos = new FileOutputStream("D:\\git\\fos.txt",true);
 
         //写数据
         for (int i = 0; i < 10; i++) {

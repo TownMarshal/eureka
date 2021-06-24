@@ -14,8 +14,7 @@ public class TreeSetDemo {
         TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
             @Override
             public int compare(Student s1, Student s2) {
-                //this.age - s.age
-                //s1,s2
+
                 int num = s1.getAge() - s2.getAge();
                 int num2 = num == 0 ? s1.getName().compareTo(s2.getName()) : num;
                 return num2;

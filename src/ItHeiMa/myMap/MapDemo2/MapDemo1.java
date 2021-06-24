@@ -23,5 +23,7 @@ public class MapDemo1 {
             String value = map.get(key);
             System.out.println(key + "=========" + value);
         }
+
+
     }
 }

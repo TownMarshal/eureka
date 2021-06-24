@@ -15,10 +15,10 @@ public class Demo23 {
         System.out.println("第" + n + "人" + age(n));
     }
 
-    private static int age(int n){
-        if (n == 1){
+    private static int age(int n) {
+        if (n == 1) {
             return 10;
         }
-        return 2 + age(n-1);
+        return 2 + age(n - 1);
     }
 }

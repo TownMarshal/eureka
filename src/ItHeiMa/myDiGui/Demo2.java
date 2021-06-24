@@ -14,10 +14,6 @@ public class Demo2 {
         //因为第一个月，第二个月的兔子对数的已知的，都是1，多以数组的第一个元素和第二个元素都是1；
         arr[0] = 1;
         arr[1] = 1;
-        //arr[2] = arr[0] + arr[1];
-        //arr[3] = arr[1] + arr[2];
-        //arr[4] = arr[2] + arr[3];
-        //arr[5] = arr[3] + arr[4];
         for (int x=2;x<arr.length;x++){
             arr[x] = arr[x-2] + arr[x-1];
         }

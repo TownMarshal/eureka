@@ -37,7 +37,7 @@ public class myList {
             Student s = it.next();
             System.out.println(s.getName() + "," + s.getAge());
         }
-        System.out.println("--------");
+
 
         //for循环方式
         for (Student s : list) {

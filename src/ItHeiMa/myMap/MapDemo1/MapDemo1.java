@@ -15,10 +15,8 @@ package ItHeiMa.myMap.MapDemo1;
  * 具体的实现类HashMap
  */
 
-import ItHeiMa.Sys;
-
 import java.util.HashMap;
-import java.util.Map;
+import java.util.Set;
 
 public class MapDemo1 {
 
@@ -27,7 +25,14 @@ public class MapDemo1 {
         map.put("001", "电信");
         map.put("002", "祖安");
         map.put("003", "网通");
-        System.out.println(map);
+//        System.out.println(map);
+        Set<String> key= map.keySet();
+        for (String s : key) {
+
+            String s1 = map.get(s);
+            System.out.println("\""+s+"\""+","+"\""+s1+"\"");
+        }
+
 
     }
 }
