@@ -1,6 +1,5 @@
 package ShangXueTang.MyComparable;
 
-import java.beans.JavaBean;
 
 /**
  * 内置引用数据类型，内置类比较大小：

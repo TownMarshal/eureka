@@ -17,6 +17,8 @@ public class StreamDemo01 {
         list.add("柳岩");
         list.add("张敏");
         list.add("张无忌");
+        list.add("柳岩");
+        list.add("王艳岩");
 
         //需求1：把list集合中以张开头的元素在控制台输出
 //        list.stream().filter((String s) -> {
@@ -33,5 +35,9 @@ public class StreamDemo01 {
 
         //需求3：把list集合中以张开头的，长度为3的元素在控制台输出
         list.stream().filter(s -> s.startsWith("张")).filter(s -> s.length() == 3).forEach(System.out::println);
+
+
+        System.out.println("========================================");
+    list.stream().filter(s->s.endsWith("岩")).filter(s->s.length()==3).forEach(System.out::println);
     }
 }

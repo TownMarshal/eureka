@@ -37,13 +37,12 @@ public class CollectionsDemo2 {
 
         //使用Collections对ArrayList集合排序
         //sort​(List<T> list, Comparator<? super T> c)
-        Collections.sort(array, new Comparator<Student>() {
+        array.sort(new Comparator<Student>() {
             @Override
             public int compare(Student s1, Student s2) {
                 //按照年龄从小到大排序，年龄相同时，按照姓名的字母顺序排序
                 int num = s1.getAge() - s2.getAge();
-                int num2 = num == 0 ? s1.getName().compareTo(s2.getName()) : num;
-                return num2;
+                return num == 0 ? s1.getName().compareTo(s2.getName()) : num;
             }
         });
 

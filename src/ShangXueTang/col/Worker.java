@@ -2,8 +2,6 @@ package ShangXueTang.col;
 
 import Demo.Object.ObjectTest1;
 import Demo.Object.ObjectTest2;
-
-import java.beans.JavaBean;
 import java.util.Comparator;
 
 /**
