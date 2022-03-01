@@ -13,5 +13,4 @@ public class DateDemo {
 
         System.out.println(d2.getTime());
     }
-
 }
