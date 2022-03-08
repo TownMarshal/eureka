@@ -13,18 +13,18 @@ import java.util.Map;
 public class AaddBandAmutiplyB {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Map SumDatas = new HashMap<>();
-        Map MulDatas = new HashMap<>();
+        Map sumDatas = new HashMap<>();
+        Map mulDatas = new HashMap<>();
         int tempsum;
         //和个数
         for (int i = 1; i < 21; i++) {
             for (int j = i + 1; j < 21; j++) {
                 tempsum = i + j;
-                if (SumDatas.containsKey(tempsum)) {
-                    int parseInt = Integer.parseInt(String.valueOf(SumDatas.get(tempsum)));
-                    SumDatas.put(tempsum, parseInt + 1);
+                if (sumDatas.containsKey(tempsum)) {
+                    int parseInt = Integer.parseInt(String.valueOf(sumDatas.get(tempsum)));
+                    sumDatas.put(tempsum, parseInt + 1);
                 } else {
-                    SumDatas.put(tempsum, 1);
+                    sumDatas.put(tempsum, 1);
                 }
             }
         }
@@ -32,11 +32,11 @@ public class AaddBandAmutiplyB {
         for (int i = 1; i < 21; i++) {
             for (int j = i + 1; j < 21; j++) {
                 tempsum = i * j;
-                if (MulDatas.containsKey(tempsum)) {
-                    int parseInt = Integer.parseInt(String.valueOf(MulDatas.get(tempsum)));
-                    MulDatas.put(tempsum, parseInt + 1);
+                if (mulDatas.containsKey(tempsum)) {
+                    int parseInt = Integer.parseInt(String.valueOf(mulDatas.get(tempsum)));
+                    mulDatas.put(tempsum, parseInt + 1);
                 } else {
-                    MulDatas.put(tempsum, 1);
+                    mulDatas.put(tempsum, 1);
                 }
             }
         }
@@ -46,15 +46,15 @@ public class AaddBandAmutiplyB {
          * A明白手中数的组合中当且仅有一对组合的积有多个组合
          * */
         int count1 = 0;
-        for (Object key : SumDatas.keySet()) {
-            int target = Integer.parseInt(String.valueOf(SumDatas.get(key)));
+        for (Object key : sumDatas.keySet()) {
+            int target = Integer.parseInt(String.valueOf(sumDatas.get(key)));
             int k = Integer.parseInt(String.valueOf(key));
             //A不知道
             if (target > 1) {
                 for (int i = 1; i < k / 2 + 1; i++) {
                     if (k - i > i && k - i < 21) {
                         int mul = (k - i) * i;
-                        int m = Integer.parseInt(String.valueOf(MulDatas.get(mul)));
+                        int m = Integer.parseInt(String.valueOf(mulDatas.get(mul)));
                         if (m > 1) {
                             count1++;
                         }
@@ -66,7 +66,7 @@ public class AaddBandAmutiplyB {
                     for (int i = 1; i < k / 2 + 1; i++) {
                         if (k - i > i && k - i < 21) {
                             int mul = (k - i) * i;
-                            int m = Integer.parseInt(String.valueOf(MulDatas.get(mul)));
+                            int m = Integer.parseInt(String.valueOf(mulDatas.get(mul)));
                             if (m > 1) {
                                 System.out.println(i + "和" + (k - i));
                             }

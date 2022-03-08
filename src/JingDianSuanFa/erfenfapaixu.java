@@ -9,9 +9,7 @@ import java.util.Arrays;
 public class erfenfapaixu {
     public static void main(String[] args) {
         int[] arr = {12, 4, 5, 78, 94, 24};
-        System.out.println(Arrays.toString(arr));
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        Arrays.sort(arr);//
         ReverseArr(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -27,8 +25,3 @@ public class erfenfapaixu {
 }
 
 
- /*
-            int temp = arr[i];
-            arr[i] = arr[arr.length-1-i];
-            arr[arr.length-1-i] = temp;
-            */

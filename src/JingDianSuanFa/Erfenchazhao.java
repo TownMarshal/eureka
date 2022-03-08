@@ -27,6 +27,19 @@ public class Erfenchazhao {
         int i = 14;
         Erfenchazhao er = new Erfenchazhao();
         int search = er.search(arr, i);
+
+
+        int[]array={2,4,1,2,7,8,4};
+        int peakElement = er.findPeakElement(array);
+        System.out.println("=======================");
+        System.out.println(peakElement);
+        System.out.println("=======================");
+
+        int peakElement1 = er.findPeakElement1(array);
+        System.out.println("=======================");
+        System.out.println(peakElement1);
+        System.out.println("=======================");
+
 //        System.out.println(search);//5，查找出数组中元素为14的下标为5
 
 
@@ -39,8 +52,8 @@ public class Erfenchazhao {
         System.out.println(arr1.length);//表示二维数组有几行
         System.out.println(arr1[0].length);//表示二维数组有几列
 
-        for (int a = 0; a < arr1[0].length; a++) {
-            System.out.println(arr1[0][a]);
+        for (int j = 0; j < arr1[0].length; j++) {
+            System.out.println(arr1[0][j]);
         }
         Map map = er.searchTwoArr(9, arr1);
         System.out.println(map);
@@ -99,7 +112,7 @@ public class Erfenchazhao {
 用某行最小或某列最大与 target 比较，每次可剔除一整行或一整列
     * */
 //    public boolean searchTwoArr(int target, int[][] array) {
-    public Map searchTwoArr(int target, int[][] array) {
+    private Map searchTwoArr(int target, int[][] array) {
         HashMap<Object, Object> map = new HashMap<>();
         //二维数组有r行
         int r = array.length;
@@ -133,5 +146,54 @@ public class Erfenchazhao {
         return map;
 //        return false;
     }
+
+
+
+
+/*
+给定一个长度为n的数组nums，请你找到峰值并返回其索引。数组可能包含多个峰值，在这种情况下，返回任何一个所在位置即可。
+1.峰值元素是指其值严格大于左右相邻值的元素。严格大于即不能有等于
+2.假设 nums[-1] = nums[n] = -\infty−∞
+3.对于所有有效的 i 都有 nums[i] != nums[i + 1]
+4.你可以使用O(logN)的时间复杂度实现此问题吗？
+如输入[2,4,1,2,7,8,4]时，会形成两个山峰，一个是索引为1，峰值为4的山峰，另一个是索引为5，峰值为8的山峰，如下图所示：
+**/
+//
+public int findPeakElement1 (int[] nums) {
+    //分析长度为1的情况
+    int len = nums.length;
+    if(len == 1){
+        return 0;
+    }
+    //分析索引为0比1大的情况
+    if(nums[0] > nums[1]){
+        return 0;
+    }
+    //分析倒数第二到倒数第一的情况
+    if(nums[len-1]>nums[len-2]){
+        return len-1;
+    }
+    //分析第二到倒数第二的情况
+    for(int i = 1; i < len-1 ;i++){
+        if(nums[i]>nums[i-1]&nums[i]>nums[i+1]){
+            return i;
+        }
+    }
+    //其余情况返回为0
+    return 0;
+}
+//这是求最大值
+    private int findPeakElement(int[] nums) {
+        int index=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]>nums[index]){
+                index=i;
+            }
+        }
+        return index;
+    }
+
+
+
 
 }
