@@ -4,7 +4,6 @@ package Demo;
  * Created by Administrator on 2019/11/12 0012.
  * /**
  *          JAVA基本数据类型转换
- *
  */
 public class Demo4 {
     public static void main(String[] args) {
@@ -39,6 +38,7 @@ public class Demo4 {
             double d2=y;
             short s=5;
             //大的表数范围的值不能自动的赋值小的表数范围的变量
+            //byte short int long float double char boolean
             //s=s+5;
         }
 }

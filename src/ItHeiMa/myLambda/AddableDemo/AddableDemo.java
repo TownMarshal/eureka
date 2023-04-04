@@ -10,13 +10,18 @@ package ItHeiMa.myLambda.AddableDemo;
             一个方法是主方法，在主方法中调用useAddable方法
  */
 public class AddableDemo {
+    //    public static void main(String[] args) {
+//        //在主方法中调用useAddable方法
+//        useAddable((int x,int y) -> {
+//            return x + y;
+////            return  x - y;
+//        });
+//
+//    }
     public static void main(String[] args) {
         //在主方法中调用useAddable方法
-        useAddable((int x,int y) -> {
-            return x + y;
-//            return  x - y;
-        });
-
+        //            return  x - y;
+        useAddable(Integer::sum);
     }
 
     private static void useAddable(Addable a) {

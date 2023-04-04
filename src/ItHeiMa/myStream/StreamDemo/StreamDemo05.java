@@ -34,7 +34,7 @@ import java.util.ArrayList;
 public class StreamDemo05 {
     public static void main(String[] args) {
         //创建一个集合，存储多个字符串元素
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
 
         list.add("10");
         list.add("20");

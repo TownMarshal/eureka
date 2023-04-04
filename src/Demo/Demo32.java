@@ -4,7 +4,6 @@ package Demo;
  * Created by Administrator on 2019/11/12 0012.
  */
 
-import cn.tx.Person;
 
 /**
  * 局部变量(需要返回去学习)

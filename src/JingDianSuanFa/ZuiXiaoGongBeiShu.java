@@ -15,7 +15,7 @@ public class ZuiXiaoGongBeiShu {
 
         int n = scanner.nextInt();
 
-        int max = (m > n) ? m : n;
+        int max = Math.max(m, n);
 
         for (int i = max; i < m * n; i++) {
             if (i % m == 0 && i % n == 0) {

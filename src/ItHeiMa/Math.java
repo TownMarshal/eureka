@@ -22,16 +22,16 @@ public class Math {
         System.out.println(java.lang.Math.round(9.78));
 
         //public static int max​(int a,int b)：返回两个int值中的较大值、较小值
-        System.out.println(java.lang.Math.max(9,78));
-        System.out.println(java.lang.Math.min(9,78));
+        System.out.println(java.lang.Math.max(9, 78));
+        System.out.println(java.lang.Math.min(9, 78));
 
         //public static double pow​(double a,double b)：返回a的b次幂的值
-        System.out.println(java.lang.Math.pow(2.0,3.0));
+        System.out.println(java.lang.Math.pow(2.0, 3.0));
 
         //public static double random​()：返回值为double的正值，[0.0,1.0)取值
 //        System.out.println(Math.random());
         System.out.println(java.lang.Math.random());
-        System.out.println((int)(java.lang.Math.random()*100)+1);
+        System.out.println((int) (java.lang.Math.random() * 100) + 1);
         System.out.println(java.lang.Math.round(java.lang.Math.random()));
     }
 }
