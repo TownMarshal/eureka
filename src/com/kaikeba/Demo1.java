@@ -11,7 +11,7 @@ public class Demo1 {
         //关机
 //        Runtime.getRuntime().exec("shutdown -s -t 6000");
         //取消关机
-        Runtime.getRuntime().exec("shutdown -a");
+         Runtime.getRuntime().exec("shutdown -a");
     }
 
 }

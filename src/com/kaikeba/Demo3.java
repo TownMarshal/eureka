@@ -14,7 +14,7 @@ import java.net.URLConnection;
  */
 public class Demo3 {
     public static void main(String[] args) throws IOException {
-        URL u = new URL("https://zaixianke.com/yq/all");
+        URL u = new URL("https://www.aliyundrive.com/drive/folder/6333c6f1f60aab1a0f8b4017af20e07756f45d6c");
         URLConnection conn = u.openConnection();
         InputStream is = conn.getInputStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(is,"UTF-8"));

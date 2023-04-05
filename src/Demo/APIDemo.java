@@ -18,9 +18,9 @@ public class APIDemo {
         public static void main(String[]args){
             int[] arr = {15,5,32,63,3,9,27,4,79};
             //使用工具类Arrays来做排序
-            //Sort(arr);
+//            Sort(arr);
             //快速打印数组
-            //printArr(arr);
+            printArr(arr);
             //调用Arrays的API来二分法查找数组中的一个数的索引
             myBinarySearch(arr,27);
 

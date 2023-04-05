@@ -11,9 +11,8 @@ public class ZhiShu {
     public static void main(String[] args) {
         int count = 0;
         long start = System.currentTimeMillis();
-
         boolean flag = true;
-        for (int i = 2; i < 200000; i++) {
+        for (int i = 2; i < 10000; i++) {
             for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
                     flag = false;
@@ -26,10 +25,9 @@ public class ZhiShu {
             }
             flag = true;
         }
-
         long end = System.currentTimeMillis();
-        System.out.println(end - start+"毫秒");
-        System.out.println(count+"个质数");
+        System.out.println(end - start + "毫秒");
+        System.out.println(count + "个质数");
 
     }
 }

@@ -21,7 +21,6 @@ public class Demo1 {
         //创建一个集合
         Set set = new HashSet();
 
-
         //1.获得随机数
         Random r = new Random();
         while(set.size() != 100){
