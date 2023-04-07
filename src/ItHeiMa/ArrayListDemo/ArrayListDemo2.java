@@ -5,7 +5,6 @@ import java.util.ArrayList;
 /**
  * Created by Administrator on 2020/2/13 0013.
  * 遍历集合的通用格式
- *
  */
 public class ArrayListDemo2 {
     public static void main(String[] args) {
