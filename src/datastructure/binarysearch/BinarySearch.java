@@ -2,6 +2,7 @@ package datastructure.binarysearch;
 
 import java.util.Arrays;
 
+//https://www.bilibili.com/video/BV1Lv4y1e7HL/?p=20&spm_id_from=pageDriver&vd_source=f6261d999398afc890f3b76856b41a03
 public class BinarySearch {
     /**
      * 二分查找基础版
