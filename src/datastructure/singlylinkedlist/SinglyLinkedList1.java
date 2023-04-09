@@ -3,7 +3,7 @@ package datastructure.singlylinkedlist;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
-//单向链表类
+//单向链表类 三种遍历方法
 public class SinglyLinkedList1 implements Iterable<Integer> {
     private Node head = null;//头指针
 
@@ -53,10 +53,12 @@ public class SinglyLinkedList1 implements Iterable<Integer> {
         //匿名内部类
         return new Iterator<Integer>() {
             Node p = head;
+
             @Override
             public boolean hasNext() {//是否有下一个元素
                 return p != null;
             }
+
             @Override
             public Integer next() {//返回当前值，并指向下一个元素
                 int v = p.value;

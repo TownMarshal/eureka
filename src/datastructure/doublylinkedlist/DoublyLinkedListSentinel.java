@@ -1,11 +1,11 @@
-package datastructure.singlylinkedlist;
+package datastructure.doublylinkedlist;
 
 import java.util.Iterator;
 import java.util.function.Consumer;
 
-//单向链表类  往链表尾部添加节点
-public class SinglyLinkedList3 implements Iterable<Integer> {
-    private Node head = null;//头指针
+//单向链表 带哨兵
+public class DoublyLinkedListSentinel implements Iterable<Integer> {
+    private Node head = new Node(666, null);//头指针 指向哨兵节点
 
 
     //节点类
@@ -22,18 +22,11 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
 
     //往链表中添加新的节点
     public void addFirst(int value) {
-        //链表为空的情况
-//        head = new Node(value, null);
-        //链表非空情况
-        head = new Node(value, head);
-
+        insert(0, value);
     }
 
     //寻找链表尾部节点
     private Node findLast() {
-        if (head == null) {//空链表
-            return null;
-        }
         Node p;
         for (p = head; p.next != null; p = p.next) {
 
@@ -44,17 +37,12 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
     //往链表尾部添加节点
     public void addLast(int value) {
         Node last = findLast();
-        if (last == null) {
-            addFirst(value);
-            return;
-        }
-
         last.next = new Node(value, null);
     }
 
     //单向链表遍历方法1 while循环
     public void loop1(Consumer<Integer> consumer) {
-        Node p = head;
+        Node p = head.next;
         while (p != null) {
             consumer.accept(p.value);
             p = p.next;
@@ -63,9 +51,8 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
 
     //单向链表遍历方法2  for循环
     public void loop2(Consumer<Integer> consumer) {
-//        Node p = head;
-//        while (p != null)
-        for (Node p = head; p != null; p = p.next) {
+
+        for (Node p = head.next; p != null; p = p.next) {
             consumer.accept(p.value);
         }
     }
@@ -75,7 +62,7 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
     public Iterator<Integer> iterator() {
         //匿名内部类
         return new Iterator<Integer>() {
-            Node p = head;
+            Node p = head.next;
 
             @Override
             public boolean hasNext() {//是否有下一个元素
@@ -95,14 +82,14 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
     //单向链表 遍历过程中寻找索引
     public void loop3() {
         int i = 0;
-        for (Node p = head; p != null; p = p.next, i++) {
+        for (Node p = head.next; p != null; p = p.next, i++) {
             System.out.println("值为：" + p.value + "索引为：" + i);
         }
     }
 
     //根据给定的索引位置找到 节点对象
     private Node findNode(int index) {
-        int i = 0;
+        int i = -1;//哨兵节点开始
         for (Node p = head; p != null; p = p.next, i++) {
             if (i == index) {
                 return p;
@@ -128,10 +115,6 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
 
     //向索引位置插入节点
     public void insert(int index, int value) {
-        if (index == 0) {
-            addFirst(value);
-            return;
-        }
         //寻找索引位置的上一个节点
         Node prenode = findNode(index - 1);
         if (prenode == null) {//找不到上一个节点
@@ -143,19 +126,10 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
 
     //删除第一个节点
     public void removeFirst() {
-        if (head == null) {
-            throw illegalIndex(0);
-        }
-        head = head.next;
-
+        remove(0);
     }
 
     public void remove(int index) {
-        //删除索引0
-        if (index == 0) {
-            removeFirst();
-            return;
-        }
         Node prenode = findNode(index - 1);//上一个节点
         if (prenode == null) {
             throw illegalIndex(index);
