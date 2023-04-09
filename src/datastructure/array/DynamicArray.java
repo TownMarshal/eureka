@@ -9,8 +9,8 @@ import java.util.stream.IntStream;
 public class DynamicArray implements Iterable<Integer> {
 
     private int size = 0;//逻辑大小
-    private final int capacity = 8;//动态数组容量
-    private final int[] arr = new int[capacity];
+    private int capacity = 8;//动态数组容量
+    private int[] arr = {};
 
     //向数组最后位置添加元素
     public void addList(int element) {
@@ -22,12 +22,27 @@ public class DynamicArray implements Iterable<Integer> {
 
     //向数组[0...size]中间位置添加元素
     public void add(int index, int element) {
+        checkAndGrow();
+        //添加逻辑
         if (index >= 0 && index < size) {
             System.arraycopy(arr, index, arr, index + 1, size - index);
 
         }
         arr[index] = element;
         size++;
+    }
+
+    private void checkAndGrow() {
+        //容量检查
+        if (size == 0) {
+            arr = new int[capacity];
+        } else if (size == capacity) {
+            //进行扩容,1.5 1.618 2
+            capacity += capacity >> 1;
+            int[] newArr = new int[capacity];
+            System.arraycopy(arr, 0, newArr, 0, size);
+            arr = newArr;
+        }
     }
 
     public int remove(int index) {
