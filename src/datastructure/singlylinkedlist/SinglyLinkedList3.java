@@ -166,4 +166,21 @@ public class SinglyLinkedList3 implements Iterable<Integer> {
         }
         prenode.next = removednode.next;
     }
+
+
+    //单向链表遍历方法4  递归遍历循环
+
+    public void loop4(Consumer<Integer> before, Consumer<Integer> after) {
+        recursion(head, before, after);
+    }
+
+    private void recursion(Node current, Consumer<Integer> before, Consumer<Integer> after) {//针对某一个节点进行的操作
+        if (current == null) {
+            return;
+        }
+        before.accept(current.value);
+        recursion(current.next, before, after);
+        after.accept(current.value);
+
+    }
 }

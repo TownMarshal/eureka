@@ -14,8 +14,8 @@ import java.net.UnknownHostException;
 public class InetAddressDemo {
     public static void main(String[] args) throws UnknownHostException {
         //public static InetAddress getByName​(String host)：确定主机名称的IP地址。主机名称可以是机器名称，也可以是IP地址
-//        InetAddress address = InetAddress.getByName("WIN-I0IUI0L6MJS");
-        InetAddress address = InetAddress.getByName("192.168.0.101");
+        InetAddress address = InetAddress.getByName("WIN-I0IUI0L6MJS");
+//        InetAddress address = InetAddress.getByName("192.168.0.101");
 
         //public String getHostName​()：获取此IP地址的主机名
         String name = address.getHostName();

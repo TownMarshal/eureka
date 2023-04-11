@@ -5,107 +5,92 @@ import java.util.function.Consumer;
 
 //单向链表 带哨兵
 public class DoublyLinkedListSentinel implements Iterable<Integer> {
-    private Node head = new Node(666, null);//头指针 指向哨兵节点
 
 
     //节点类
-    private static class Node {
+    static class Node {
+        Node pre;//上一个节点指针
         int value;//值
         Node next;//下一个节点指针
 
-        public Node(int value, Node next) {
+        public Node(Node pre, int value, Node next) {
+            this.pre = pre;
             this.value = value;
             this.next = next;
         }
-
     }
 
-    //往链表中添加新的节点
-    public void addFirst(int value) {
-        insert(0, value);
+    private Node head;//头哨兵
+    private Node tail;//尾哨兵
+
+    public DoublyLinkedListSentinel() {
+        head = new Node(null, 666, null);
+        tail = new Node(null, 888, null);
+        head.next = tail;
+        tail.pre = head;
     }
 
-    //寻找链表尾部节点
-    private Node findLast() {
-        Node p;
-        for (p = head; p.next != null; p = p.next) {
-
-        }
-        return p;
-    }
-
-    //往链表尾部添加节点
-    public void addLast(int value) {
-        Node last = findLast();
-        last.next = new Node(value, null);
-    }
-
-    //单向链表遍历方法1 while循环
-    public void loop1(Consumer<Integer> consumer) {
-        Node p = head.next;
-        while (p != null) {
-            consumer.accept(p.value);
-            p = p.next;
-        }
-    }
-
-    //单向链表遍历方法2  for循环
-    public void loop2(Consumer<Integer> consumer) {
-
-        for (Node p = head.next; p != null; p = p.next) {
-            consumer.accept(p.value);
-        }
-    }
-
-    //单向链表遍历方法3  迭代器
-    @Override
-    public Iterator<Integer> iterator() {
-        //匿名内部类
-        return new Iterator<Integer>() {
-            Node p = head.next;
-
-            @Override
-            public boolean hasNext() {//是否有下一个元素
-                return p != null;
-            }
-
-            @Override
-            public Integer next() {//返回当前值，并指向下一个元素
-                int v = p.value;
-                p = p.next;
-                return v;
-            }
-        };
-    }
-
-
-    //单向链表 遍历过程中寻找索引
-    public void loop3() {
-        int i = 0;
-        for (Node p = head.next; p != null; p = p.next, i++) {
-            System.out.println("值为：" + p.value + "索引为：" + i);
-        }
-    }
-
-    //根据给定的索引位置找到 节点对象
+    //根据索引查找节点
     private Node findNode(int index) {
-        int i = -1;//哨兵节点开始
-        for (Node p = head; p != null; p = p.next, i++) {
+        int i = -1;
+        for (Node p = head; p != tail; p = p.next, i++) {
             if (i == index) {
                 return p;
             }
         }
-        return null;//没有找到的情况
+        return null;
     }
 
-    //根据节点对象，找到节点对象的值
-    public int get(int index) {
-        Node node = findNode(index);
-        if (node == null) {
-            //抛异常
+
+    public void addFirst(int value) {
+        insert(0, value);
+    }
+
+    public void removeFirst() {
+        remove(0);
+    }
+
+    public void addLast(int value) {
+        Node lastNode = tail.pre;
+        Node addedNode = new Node(lastNode, value, tail);
+        lastNode.next = addedNode;
+        tail.pre = addedNode;
+    }
+
+    public void removeLast() {
+        Node removedNode = tail.pre;
+        if (removedNode == head) {
+            throw illegalIndex(0);
+        }
+        Node preNode = removedNode.pre;
+        preNode.next = tail;
+        tail.pre = preNode;
+    }
+
+    public void insert(int index, int value) {
+        Node preNode = findNode(index - 1);
+        if (preNode == null) {
             throw illegalIndex(index);
         }
-        return node.value;
+        Node aftNode = preNode.next;
+        Node insertedNode = new Node(preNode, value, aftNode);
+        preNode.next = insertedNode;
+        aftNode.pre = insertedNode;
+    }
+
+    public void remove(int index) {
+        Node preNode = findNode(index - 1);
+        if (preNode == null) {
+            throw illegalIndex(index);
+        }
+        Node removedNode = preNode.next;
+        if (removedNode == tail) {
+            throw illegalIndex(index);
+        }
+        Node aftNode = removedNode.next;
+        preNode.next = aftNode;
+        aftNode.pre = preNode;
+
     }
 
     //异常处理
@@ -113,31 +98,25 @@ public class DoublyLinkedListSentinel implements Iterable<Integer> {
         return new IllegalArgumentException(String.format("index[%d] 不合法%n", index));
     }
 
-    //向索引位置插入节点
-    public void insert(int index, int value) {
-        //寻找索引位置的上一个节点
-        Node prenode = findNode(index - 1);
-        if (prenode == null) {//找不到上一个节点
-            throw illegalIndex(index);
-        }
-        prenode.next = new Node(value, prenode.next);
+    @Override
+    public Iterator<Integer> iterator() {
+        return new Iterator<Integer>() {
+            Node p = head.next;
 
+            @Override
+            public boolean hasNext() {
+                //遍历的条件，返回一个true or false
+                return p != tail;
+            }
+
+            @Override
+            public Integer next() {
+                //返回当前指针指向的值，并且让当前指针指向下一个值
+                int value = p.value;
+                p = p.next;
+                return value;
+            }
+        };
     }
 
-    //删除第一个节点
-    public void removeFirst() {
-        remove(0);
-    }
-
-    public void remove(int index) {
-        Node prenode = findNode(index - 1);//上一个节点
-        if (prenode == null) {
-            throw illegalIndex(index);
-        }
-        Node removednode = prenode.next;//被删除的节点
-        if (removednode == null) {
-            throw illegalIndex(index);
-        }
-        prenode.next = removednode.next;
-    }
 }

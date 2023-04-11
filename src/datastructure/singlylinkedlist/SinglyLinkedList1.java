@@ -47,6 +47,7 @@ public class SinglyLinkedList1 implements Iterable<Integer> {
         }
     }
 
+
     //单向链表遍历方法3  迭代器
     @Override
     public Iterator<Integer> iterator() {
@@ -67,4 +68,7 @@ public class SinglyLinkedList1 implements Iterable<Integer> {
             }
         };
     }
+
+
+
 }
