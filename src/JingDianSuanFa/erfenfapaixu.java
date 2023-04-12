@@ -10,11 +10,11 @@ public class erfenfapaixu {
     public static void main(String[] args) {
         int[] arr = {12, 4, 5, 78, 94, 24};
         Arrays.sort(arr);//
-        ReverseArr(arr);
+        reverseArr(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void ReverseArr(int[] arr) {
+    public static void reverseArr(int[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
             //获取i对称的
             int temp = arr[arr.length - 1 - i];

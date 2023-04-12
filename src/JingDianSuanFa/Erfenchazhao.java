@@ -28,17 +28,14 @@ public class Erfenchazhao {
         Erfenchazhao er = new Erfenchazhao();
         int search = er.search(arr, i);
 
-
         int[]array={2,4,1,2,7,8,4};
         int peakElement = er.findPeakElement(array);
         System.out.println("=======================");
         System.out.println(peakElement);
-        System.out.println("=======================");
 
         int peakElement1 = er.findPeakElement1(array);
         System.out.println("=======================");
         System.out.println(peakElement1);
-        System.out.println("=======================");
 
 //        System.out.println(search);//5，查找出数组中元素为14的下标为5
 
