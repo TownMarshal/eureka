@@ -1,9 +1,10 @@
 package datastructure.leetcode;
 
-//删除有序链表的重复节点，（重复节点保留一个）
+//删除有序链表的重复节点，（重复节点保留唯一一个）
 public class RemoveDuplicates {
     /**
      * 使用两个相邻指针依次后移直到p2=null
+     *
      * @param head
      * @return
      */
@@ -30,6 +31,7 @@ public class RemoveDuplicates {
     /**
      * 使用递归  从当前节点（我）开始，若我与next重复，返回next
      * 若我与next不重复，返回我，但是next应当更新
+     *
      * @param p
      * @return
      */
