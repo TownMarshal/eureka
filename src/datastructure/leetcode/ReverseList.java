@@ -1,7 +1,7 @@
 package datastructure.leetcode;
 
 //反转单向链表  五种方法
-public class reverseList {
+public class ReverseList {
     //方法一  复制一份新的节点，将原来的节点的值一一赋值给新节点
     public ListNode reverse1(ListNode o1) {
         ListNode n1 = null;
@@ -109,7 +109,7 @@ public class reverseList {
 //        ListNode reversedList = new reverseList().reverse2(o1);
 //        ListNode reversedList = new reverseList().reverse3(o1);
 //        ListNode reversedList = new reverseList().reverse4(o1);
-        ListNode reversedList = new reverseList().reverse5(o1);
+        ListNode reversedList = new ReverseList().reverse5(o1);
         System.out.println(reversedList);
     }
 }
