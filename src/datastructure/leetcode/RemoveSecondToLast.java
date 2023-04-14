@@ -1,6 +1,11 @@
 package datastructure.leetcode;
 
-//删除链表的倒数第二个节点，倒数第N个节点
+
+/**
+ * https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
+ * 19. 删除链表的倒数第 N 个结点
+ * 删除链表的倒数第二个节点，倒数第N个节点
+ */
 public class RemoveSecondToLast {
     /**
      * 递归删除倒数第二个节点

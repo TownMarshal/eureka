@@ -19,7 +19,7 @@ public class ZhiShu {
                     break;
                 }
             }
-            if (flag == true) {
+            if (flag) {
                 count++;
                 System.out.println(i);
             }

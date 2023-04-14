@@ -1,6 +1,10 @@
 package datastructure.leetcode;
 
-//反转单向链表  五种方法
+
+/**
+ * https://leetcode.cn/problems/reverse-linked-list/
+ * 反转单向链表  五种方法
+ */
 public class ReverseList {
     //方法一  复制一份新的节点，将原来的节点的值一一赋值给新节点
     public ListNode reverse1(ListNode o1) {

@@ -1,6 +1,11 @@
 package datastructure.leetcode;
 
-//根据给的值删除节点
+
+/**
+ * https://leetcode.cn/problems/remove-linked-list-elements/
+ * 203. 移除链表元素
+ * 根据给的值删除节点
+ */
 public class RemoveElements {
     /**
      * @param head  链表头
@@ -27,6 +32,7 @@ public class RemoveElements {
 
     /**
      * 将给p2统一赋值的动作放到循环开始处
+     *
      * @param head
      * @param value
      * @return

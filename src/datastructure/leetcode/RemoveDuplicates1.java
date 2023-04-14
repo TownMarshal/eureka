@@ -1,6 +1,11 @@
 package datastructure.leetcode;
 
-//删除有序链表的重复节点，（重复节点全部删除）
+
+/**
+ *  https://leetcode.cn/problems/remove-linked-list-elements/
+ *  * 203. 移除链表元素
+ *  删除有序链表的重复节点，（重复节点全部删除）
+ */
 public class RemoveDuplicates1 {
 
     /**

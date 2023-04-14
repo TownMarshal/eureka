@@ -2,6 +2,8 @@ package datastructure.leetcode;
 
 
 /**
+ * https://leetcode.cn/problems/merge-two-sorted-lists/
+ * https://leetcode.cn/problems/merge-k-sorted-lists/
  * 合并两个有序链表  合并多个有序链表
  * Divide and Conquer 分而治之（分，治，合）
  * Decrease and conquer 减而治之

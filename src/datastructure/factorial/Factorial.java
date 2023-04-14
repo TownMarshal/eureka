@@ -1,5 +1,6 @@
 package datastructure.factorial;
 
+//计算阶乘
 public class Factorial {
     public static void main(String[] args) {
 //        int val = f(5);

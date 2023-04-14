@@ -1,6 +1,11 @@
 package datastructure.leetcode;
 
-//删除有序链表的重复节点，（重复节点保留唯一一个）
+
+/**
+ *https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/
+ * 82. 删除排序链表中的重复元素 II
+ * 删除有序链表的重复节点，（重复节点保留唯一一个）
+ */
 public class RemoveDuplicates {
     /**
      * 使用两个相邻指针依次后移直到p2=null
