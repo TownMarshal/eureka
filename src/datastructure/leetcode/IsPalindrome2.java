@@ -22,7 +22,7 @@ public class IsPalindrome2 {
 //            o1 = o2;
             o1 = p1;
         }
-  
+
         if (p2 != null) {//奇数节点，让p1往后走一步，比较后面的节点
             p1 = p1.next;
         }
