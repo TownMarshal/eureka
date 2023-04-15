@@ -1,8 +1,10 @@
 package datastructure.queue;
 
-import java.util.Iterator;
 
-public class LinkedListQueue<E> implements Queue<E>, Iterable {
+import java.util.Iterator;
+import java.util.StringJoiner;
+
+public class LinkedListQueue<E> implements Queue<E>, Iterable<E> {
     private static class Node<E> {
         E value;
         Node<E> next;
@@ -13,35 +15,116 @@ public class LinkedListQueue<E> implements Queue<E>, Iterable {
         }
     }
 
-    Node<E> head = new Node<>(null, null);
-    Node<E> tail = head;
+    private final Node<E> head = new Node<>(null, null);
+    private Node<E> tail = head;
+    private int size = 0;//节点数
+    private int capacity = Integer.MAX_VALUE;//容量
+
+    {
+        tail.next = head;
+    }
+
+
+    public LinkedListQueue(int capacity) {
+        this.capacity = capacity;
+    }
 
     public LinkedListQueue() {
-        tail.next = head;
     }
 
     @Override
     public boolean offer(E value) {
-        return false;
+        if (isFull()) {
+            return false;
+        }
+        Node<E> added = new Node<>(value, head);
+        tail.next = added;
+        tail = added;
+        size++;
+        return true;
     }
 
     @Override
     public E poll() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        Node<E> first = head.next;
+        head.next = first.next;
+        if (first == tail) {
+            tail = head;
+        }
+        size--;
+        return first.value;
     }
 
     @Override
     public E peak() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        return head.next.value;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return head == tail;
     }
 
     @Override
-    public Iterator iterator() {
-        return null;
+    public boolean isFull() {
+        return size == capacity;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            Node<E> p = head.next;
+
+            @Override
+            public boolean hasNext() {
+                return p != head;
+            }
+
+            @Override
+            public E next() {
+                E value = p.value;
+                p = p.next;
+                return value;
+            }
+        };
+    }
+
+
+    @Override
+    public String toString() {
+        StringJoiner sj = new StringJoiner(",");
+        for (E e : this) {
+            sj.add(e.toString());
+        }
+        return sj.toString();
+    }
+
+    public static void main(String[] args) {
+        LinkedListQueue<Object> queue = new LinkedListQueue<>();
+//        LinkedListQueue<Object> queue = new LinkedListQueue<>(3);
+        System.out.println(queue.peak());
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
+        queue.offer(4);
+        queue.offer(5);
+        for (Object o : queue) {
+//            queue.poll();
+            System.out.println(o);
+        }
+        queue.poll();
+        queue.poll();
+
+        for (Object o : queue) {
+            System.out.println(o);
+        }
+        System.out.println(queue.peak());
+
     }
 }
