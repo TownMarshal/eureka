@@ -3,7 +3,7 @@ package datastructure.doublylinkedlist;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
-//单向链表 带哨兵
+//双向链表 带哨兵
 public class DoublyLinkedListSentinel implements Iterable<Integer> {
 
 

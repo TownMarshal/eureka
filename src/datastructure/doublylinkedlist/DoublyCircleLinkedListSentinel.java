@@ -2,7 +2,7 @@ package datastructure.doublylinkedlist;
 
 import java.util.Iterator;
 
-//单向链表 带哨兵
+//双向环形链表 带哨兵
 public class DoublyCircleLinkedListSentinel implements Iterable<Integer> {
 
 
