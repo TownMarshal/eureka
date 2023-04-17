@@ -19,5 +19,6 @@ public class ArrayListDemo {
         //IndexOutOfBoundsException  集合越界
         // arr.add(5,"javaee");
         System.out.println("arr" + arr);
+
     }
 }
