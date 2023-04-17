@@ -3,7 +3,11 @@ package datastructure.queue;
 
 import java.util.Iterator;
 import java.util.StringJoiner;
-
+/**
+ * 仅用 head, tail 判断空满, head, tail 即为索引值, tail 停下来的位置不存储元素
+ *
+ * @param <E> 队列中元素类型
+ */
 public class ArrayQueue1<E> implements Queue<E>, Iterable<E> {
     private final E[] array;
     private int head = 0;

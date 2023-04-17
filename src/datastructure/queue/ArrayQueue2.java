@@ -2,7 +2,11 @@ package datastructure.queue;
 
 
 import java.util.Iterator;
-
+/**
+ * 用 size 辅助判断空满
+ *
+ * @param <E> 队列中元素类型
+ */
 public class ArrayQueue2<E> implements Queue<E>, Iterable<E> {
     private final E[] array;
     private int head = 0;
