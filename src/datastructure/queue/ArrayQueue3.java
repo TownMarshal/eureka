@@ -58,7 +58,7 @@ public class ArrayQueue3<E> implements Queue<E>, Iterable<E> {
     }
 
     @Override
-    public E peak() {
+    public E peek() {
         if (isEmpty()) {
             return null;
         }
@@ -98,7 +98,7 @@ public class ArrayQueue3<E> implements Queue<E>, Iterable<E> {
     public static void main(String[] args) {
 /*        ArrayQueue3<Object> queue = new ArrayQueue3<>(8);
 
-        System.out.println(queue.peak());
+        System.out.println(queue.peek());
         queue.offer(1);
         queue.offer(2);
         queue.offer(3);
@@ -113,7 +113,7 @@ public class ArrayQueue3<E> implements Queue<E>, Iterable<E> {
         for (Object o : queue) {
             System.out.println(o);
         }
-        System.out.println(queue.peak());*/
+        System.out.println(queue.peek());*/
 /*
 求离c最近，比c大的 2^n (方法1)
 2^4     = 16

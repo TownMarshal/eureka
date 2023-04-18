@@ -41,7 +41,7 @@ public class ArrayQueue2<E> implements Queue<E>, Iterable<E> {
     }
 
     @Override
-    public E peak() {
+    public E peek() {
         if (isEmpty()) {
             return null;
         }
@@ -83,7 +83,7 @@ public class ArrayQueue2<E> implements Queue<E>, Iterable<E> {
     public static void main(String[] args) {
         ArrayQueue2<Object> queue = new ArrayQueue2<>(5);
 
-        System.out.println(queue.peak());
+        System.out.println(queue.peek());
         queue.offer(1);
         queue.offer(2);
         queue.offer(3);
@@ -99,6 +99,6 @@ public class ArrayQueue2<E> implements Queue<E>, Iterable<E> {
         for (Object o : queue) {
             System.out.println(o);
         }
-        System.out.println(queue.peak());
+        System.out.println(queue.peek());
     }
 }

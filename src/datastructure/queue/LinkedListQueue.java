@@ -59,7 +59,7 @@ public class LinkedListQueue<E> implements Queue<E>, Iterable<E> {
     }
 
     @Override
-    public E peak() {
+    public E peek() {
         if (isEmpty()) {
             return null;
         }
@@ -108,7 +108,7 @@ public class LinkedListQueue<E> implements Queue<E>, Iterable<E> {
     public static void main(String[] args) {
         LinkedListQueue<Object> queue = new LinkedListQueue<>();
 //        LinkedListQueue<Object> queue = new LinkedListQueue<>(3);
-        System.out.println(queue.peak());
+        System.out.println(queue.peek());
         queue.offer(1);
         queue.offer(2);
         queue.offer(3);
@@ -124,7 +124,7 @@ public class LinkedListQueue<E> implements Queue<E>, Iterable<E> {
         for (Object o : queue) {
             System.out.println(o);
         }
-        System.out.println(queue.peak());
+        System.out.println(queue.peek());
 
     }
 }

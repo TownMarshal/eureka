@@ -21,7 +21,7 @@ public interface Queue<E> {
      *
      * @return 如果对列非空返回对列头的值，否则返回null
      */
-    E peak();
+    E peek();
 
     /**
      * 检查对列是否为空
