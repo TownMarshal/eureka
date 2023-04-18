@@ -1,13 +1,13 @@
 package datastructure.leetcode;
 
-import datastructure.singlylinkedlist.SinglyLinkedList3;
+
 
 public class ListNode {
-    public int value;
+    public int val;
     public ListNode next;
 
-    public ListNode(int value, ListNode next) {
-        this.value = value;
+    public ListNode(int val, ListNode next) {
+        this.val = val;
         this.next = next;
     }
 
@@ -18,7 +18,7 @@ public class ListNode {
         sb.append("[");
         ListNode p = this;
         while (p != null) {
-            sb.append(p.value);
+            sb.append(p.val);
             if (p.next != null) {
                 sb.append(",");
             }

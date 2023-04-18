@@ -27,7 +27,7 @@ public class IsPalindrome2 {
             p1 = p1.next;
         }
         while (n1 != null) {
-            if (n1.value != p1.value) {
+            if (n1.val != p1.val) {
                 return false;
             }
             n1 = n1.next;

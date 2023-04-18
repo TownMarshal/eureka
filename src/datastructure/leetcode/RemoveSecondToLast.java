@@ -27,7 +27,7 @@ public class RemoveSecondToLast {
         }
         //下一个节点的倒数位置
         int nth = recursion(p.next, n);
-        System.out.println(p.value + " " + nth);
+        System.out.println(p.val + " " + nth);
         if (nth == n) {
             //p=3  p.next=4 p.next.next=5
             p.next = p.next.next;

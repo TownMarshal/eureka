@@ -11,7 +11,7 @@ public class IsPalindrome {
         ListNode reverse = reverse(middle);
 //        System.out.println(reverse);
         while (reverse != null) {
-            if (reverse.value != head.value) {
+            if (reverse.val != head.val) {
                 return false;
             }
             reverse = reverse.next;

@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * https://leetcode.cn/problems/merge-sorted-array/
  * 88. 合并两个有序数组
+ * 合并同一个数组中左右区间各为非递减顺序排列的整数，合并后的数组同样按 非递减顺序 排列
  */
 
 public class MergeSortedArray {

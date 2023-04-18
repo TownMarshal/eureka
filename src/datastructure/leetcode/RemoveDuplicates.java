@@ -2,7 +2,7 @@ package datastructure.leetcode;
 
 
 /**
- *https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/
+ *https://leetcode.cn/problems/remove-duplicates-from-sorted-list/
  * 82. 删除排序链表中的重复元素 II
  * 删除有序链表的重复节点，（重复节点保留唯一一个）
  */
@@ -22,7 +22,7 @@ public class RemoveDuplicates {
         ListNode p1 = head;
         ListNode p2;
         while ((p2 = p1.next) != null) {
-            if (p1.value == p2.value) {
+            if (p1.val == p2.val) {
                 p1.next = p2.next;//p1指向p2的下一个节点，代表删除p2
 
             } else {
@@ -44,7 +44,7 @@ public class RemoveDuplicates {
         if (p == null || p.next == null) {
             return p;
         }
-        if (p.value == p.next.value) {
+        if (p.val == p.next.val) {
             return removeDuplicates2(p.next);//返回下一个节点去重的结果
         } else {
             p.next = removeDuplicates2(p.next);

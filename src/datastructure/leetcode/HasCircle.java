@@ -1,6 +1,6 @@
 package datastructure.leetcode;
 
-import static datastructure.factorial.Fibonacci.f;
+
 
 /**
  * 阶段一：
@@ -66,6 +66,6 @@ public class HasCircle {
         n12.next = n8;
 //        n12.next = n1;
 //        System.out.println(new HasCircle().hasCircle(n1));
-        System.out.println(new HasCircle().detectCircle(n1).value);
+        System.out.println(new HasCircle().detectCircle(n1).val);
     }
 }

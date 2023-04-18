@@ -25,7 +25,7 @@ public class IsPalindrome1 {
         ListNode reverse = n1;
 
         while (reverse != null) {
-            if (reverse.value != head.value) {
+            if (reverse.val != head.val) {
                 return false;
             }
             reverse = reverse.next;

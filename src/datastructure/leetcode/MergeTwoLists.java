@@ -20,7 +20,7 @@ public class MergeTwoLists {
         ListNode sentinel = new ListNode(-1, null);
         ListNode p = sentinel;
         while (p1 != null && p2 != null) {
-            if (p1.value < p2.value) {
+            if (p1.val < p2.val) {
                 p.next = p1;
                 p1 = p1.next;
             } else {
@@ -52,7 +52,7 @@ public class MergeTwoLists {
         if (p1 == null) {
             return p2;
         }
-        if (p1.value < p2.value) {
+        if (p1.val < p2.val) {
             p1.next = mergeTwoLists2(p1.next, p2);
             return p1;
         } else {
